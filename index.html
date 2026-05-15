@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Lucas Restaurante</title>
+
+<style>
+body {
+  font-family: Arial;
+  margin: 0;
+  background: #121212;
+  color: #f5f5f5;
+}
+
+header {
+  background: #000;
+  padding: 25px;
+  text-align: center;
+  border-bottom: 2px solid #FFC107;
+}
+
+header h1 {
+  color: #FFC107;
+  margin: 0;
+}
+
+nav {
+  background: #1e1e1e;
+  padding: 10px;
+  text-align: center;
+}
+
+nav a {
+  color: #FFC107;
+  margin: 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.banner img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+section {
+  padding: 20px;
+}
+
+h2 {
+  color: #FFC107;
+}
+
+.cardapio {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #1e1e1e;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 15px;
+}
+
+button {
+  background: #FFC107;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 8px;
+}
+
+button:hover {
+  background: #ffca2c;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>Lucas Restaurante</h1>
+  <p>Sabor que conquista</p>
+</header>
+
+<nav>
+  <a href="#">Início</a>
+  <a href="#">Cardápio</a>
+  <a href="#">Contato</a>
+</nav>
+
+<div class="banner">
+  <img src="imagens/banner.jpg">
+</div>
+
+<section>
+  <h2>Cardápio</h2>
+
+  <div class="cardapio">
+
+    <div class="card">
+      <img src="imagens/hamburguer.jpg">
+      <div class="card-content">
+        <h3>Hambúrguer Clássico</h3>
+        <p>Pão, carne, queijo e molho especial</p>
+        <strong>R$ 25,00</strong><br><br>
+        <button>Pedir</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="imagens/macarrao.jpg">
+      <div class="card-content">
+        <h3>Macarrão Italiano</h3>
+        <p>Molho artesanal e parmesão</p>
+        <strong>R$ 30,00</strong><br><br>
+        <button>Pedir</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="imagens/bebida.jpg">
+      <div class="card-content">
+        <h3>Bebidas</h3>
+        <p>Refrigerantes e sucos</p>
+        <strong>R$ 6,00</strong><br><br>
+        <button>Pedir</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="imagens/sobremesa.jpg">
+      <div class="card-content">
+        <h3>Sobremesas</h3>
+        <p>Doces especiais</p>
+        <strong>R$ 15,00</strong><br><br>
+        <button>Pedir</button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+</body>
+</html>
